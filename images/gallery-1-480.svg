@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-labelledby="t">
-  <title id="t">Projet restaurant 480</title>
-  <rect width="480" height="320" fill="#f7efe1"/>
-  <rect x="40" y="40" width="400" height="240" rx="14" fill="#fff" stroke="#aa6d39"/>
-  <text x="240" y="170" text-anchor="middle" font-size="34" font-family="Segoe UI, sans-serif" fill="#7c4b1f">Restaurant</text>
-</svg>

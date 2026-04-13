@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="t">
-  <title id="t">Dashboard 960</title>
-  <rect width="960" height="640" fill="#e8edf8"/>
-  <rect x="80" y="80" width="800" height="480" rx="20" fill="#fff" stroke="#344f8a"/>
-  <rect x="140" y="140" width="680" height="60" fill="#c8d7f6"/>
-  <rect x="140" y="240" width="300" height="220" fill="#7e9ddd"/>
-  <rect x="480" y="240" width="340" height="220" fill="#476fbf"/>
-</svg>
