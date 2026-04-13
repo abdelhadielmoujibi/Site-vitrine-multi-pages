@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NovaStudio - Contact</title>
+    <meta name="description" content="Contactez NovaStudio via formulaire complet, infos de contact et carte.">
+    <meta name="keywords" content="contact, formulaire, carte, agence web">
+    <meta property="og:title" content="NovaStudio - Contact">
+    <meta property="og:description" content="Demandez un devis ou un rendez-vous avec NovaStudio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/pages/contact.html">
+    <meta property="og:image" content="https://example.com/images/hero-1024.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+    <header>
+      <div class="container">
+        <p class="brand">NovaStudio</p>
+        <nav aria-label="Navigation principale">
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu" class="container">
+      <section>
+        <h1>Contact</h1>
+        <p>Remplissez le formulaire pour recevoir une proposition adaptee a votre projet.</p>
+      </section>
+
+      <section class="grid-2">
+        <article>
+          <h2>Formulaire de contact</h2>
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Informations personnelles</legend>
+              <label for="nom">Nom</label>
+              <input id="nom" name="nom" type="text" required minlength="2">
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+
+              <label for="telephone">Telephone</label>
+              <input id="telephone" name="telephone" type="tel" pattern="[0-9+ ]{8,20}" placeholder="+213 555 00 00 00" required>
+
+              <label for="site">Site web</label>
+              <input id="site" name="site" type="url" placeholder="https://exemple.com">
+
+              <label for="motdepasse">Mot de passe (espace client)</label>
+              <input id="motdepasse" name="motdepasse" type="password" minlength="8">
+            </fieldset>
+
+            <fieldset>
+              <legend>Details du besoin</legend>
+              <label for="service">Service souhaite</label>
+              <select id="service" name="service" required>
+                <option value="">Choisir</option>
+                <option value="site">Creation de site</option>
+                <option value="refonte">Refonte visuelle</option>
+                <option value="suivi">Maintenance</option>
+              </select>
+
+              <label for="budget">Budget estime (EUR)</label>
+              <input id="budget" name="budget" type="number" min="300" max="10000" step="50" required>
+
+              <label for="date">Date de debut souhaitee</label>
+              <input id="date" name="date" type="date" required>
+
+              <label for="heure">Heure de rappel</label>
+              <input id="heure" name="heure" type="time">
+
+              <label for="mois">Mois de lancement</label>
+              <input id="mois" name="mois" type="month">
+
+              <label for="semaine">Semaine preferee</label>
+              <input id="semaine" name="semaine" type="week">
+
+              <label for="rdv">Rendez-vous precis</label>
+              <input id="rdv" name="rdv" type="datetime-local">
+
+              <label for="moteur">Moteur de recherche actuel</label>
+              <input id="moteur" name="moteur" type="search" placeholder="Tapez un mot-cle">
+
+              <label for="teinte">Couleur dominante souhaitee</label>
+              <input id="teinte" name="teinte" type="color" value="#0e5a6d">
+
+              <label for="urgence">Niveau d'urgence</label>
+              <input id="urgence" name="urgence" type="range" min="1" max="10" value="5">
+
+              <label for="brief">Ajouter un brief (PDF)</label>
+              <input id="brief" name="brief" type="file" accept=".pdf,.doc,.docx">
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset>
+              <legend>Preferences</legend>
+              <div class="inline-group">
+                <label><input type="radio" name="canal" value="email" checked> Reponse par email</label>
+                <label><input type="radio" name="canal" value="tel"> Reponse par telephone</label>
+              </div>
+              <div class="inline-group">
+                <label><input type="checkbox" name="newsletter"> Recevoir la newsletter</label>
+                <label><input type="checkbox" name="cgu" required> J'accepte les conditions</label>
+              </div>
+            </fieldset>
+
+            <button type="submit">Envoyer la demande</button>
+          </form>
+        </article>
+
+        <aside>
+          <h2>Nos coordonnees</h2>
+          <p><strong>Adresse:</strong> 12 rue des Ateliers, Alger</p>
+          <p><strong>Email:</strong> contact@novastudio.test</p>
+          <p><strong>Telephone:</strong> +213 555 10 20 30</p>
+          <h3>Carte</h3>
+          <iframe title="Carte de localisation NovaStudio" src="https://www.openstreetmap.org/export/embed.html?bbox=3.03%2C36.70%2C3.10%2C36.75&amp;layer=mapnik"></iframe>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container grid-2">
+        <section>
+          <h2>Plan du site</h2>
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Mentions legales</h2>
+          <p class="muted">Le formulaire est pedagogique. Aucune donnee n'est stockee.</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

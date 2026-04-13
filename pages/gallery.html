@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NovaStudio - Galerie</title>
+    <meta name="description" content="Galerie de projets avec images responsives via picture et srcset.">
+    <meta name="keywords" content="galerie, projets, portfolio, responsive images">
+    <meta property="og:title" content="NovaStudio - Galerie">
+    <meta property="og:description" content="Explorez nos realisations recentes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/pages/gallery.html">
+    <meta property="og:image" content="https://picsum.photos/id/1033/1200/630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+    <header>
+      <div class="container">
+        <p class="brand">NovaStudio</p>
+        <nav aria-label="Navigation principale">
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html" aria-current="page">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu" class="container">
+      <section>
+        <h1>Galerie de realisations</h1>
+        <p>Chaque visuel s'adapte a la taille d'ecran grace a <code>srcset</code> et <code>picture</code>.</p>
+      </section>
+
+      <section class="grid-3">
+        <figure>
+          <picture>
+            <source media="(min-width: 900px)" srcset="https://picsum.photos/id/1033/960/640">
+            <img src="https://picsum.photos/id/1033/480/320" srcset="https://picsum.photos/id/1033/480/320 480w, https://picsum.photos/id/1033/960/640 960w" sizes="(min-width: 900px) 30vw, 90vw" alt="Photo de projet web pour commerce local" width="480" height="320" loading="lazy">
+          </picture>
+          <figcaption>Site restaurant local</figcaption>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 900px)" srcset="https://picsum.photos/id/1050/960/640">
+            <img src="https://picsum.photos/id/1050/480/320" srcset="https://picsum.photos/id/1050/480/320 480w, https://picsum.photos/id/1050/960/640 960w" sizes="(min-width: 900px) 30vw, 90vw" alt="Photo de maquettes pour identite visuelle" width="480" height="320" loading="lazy">
+          </picture>
+          <figcaption>Refonte identite visuelle</figcaption>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 900px)" srcset="https://picsum.photos/id/1060/960/640">
+            <img src="https://picsum.photos/id/1060/480/320" srcset="https://picsum.photos/id/1060/480/320 480w, https://picsum.photos/id/1060/960/640 960w" sizes="(min-width: 900px) 30vw, 90vw" alt="Photo d'un tableau de bord numerique" width="480" height="320" loading="lazy">
+          </picture>
+          <figcaption>Dashboard de suivi activite</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Source des images</h2>
+        <p>Photos chargees depuis <a href="https://picsum.photos/" target="_blank" rel="noopener noreferrer">Lorem Picsum</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container grid-2">
+        <section>
+          <h2>Plan du site</h2>
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Mentions legales</h2>
+          <p class="muted">Visuels de demonstration realises pour un exercice academique.</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

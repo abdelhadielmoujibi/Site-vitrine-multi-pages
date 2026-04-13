@@ -1,0 +1,225 @@
+:root {
+  --bg: #f4f7f9;
+  --surface: #ffffff;
+  --primary: #0e5a6d;
+  --primary-soft: #d9eef4;
+  --text: #1f2a30;
+  --muted: #5a6a73;
+  --border: #c7d7dd;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: var(--primary);
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+}
+
+.skip-link:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 1000;
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin: 0 auto;
+}
+
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  margin: 0;
+  padding: 1rem 0 0.25rem;
+  color: var(--primary);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0.5rem 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.3rem;
+}
+
+nav a[aria-current="page"] {
+  background: var(--primary-soft);
+  font-weight: 700;
+}
+
+main {
+  padding: 1.5rem 0 2.5rem;
+}
+
+section,
+article,
+aside {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero img,
+picture img,
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+.grid-2,
+.grid-3 {
+  display: grid;
+  gap: 1rem;
+}
+
+.media-full {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 0.6rem;
+  text-align: left;
+}
+
+thead,
+tfoot {
+  background: var(--primary-soft);
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 0.35rem 0 0.2rem;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 0.45rem;
+  border: 1px solid var(--border);
+  border-radius: 0.35rem;
+  font: inherit;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+.inline-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  background: var(--primary);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+footer {
+  background: #e8eff2;
+  border-top: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+iframe {
+  width: 100%;
+  min-height: 260px;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 800px) {
+  .hero {
+    grid-template-columns: 1.1fr 1fr;
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
